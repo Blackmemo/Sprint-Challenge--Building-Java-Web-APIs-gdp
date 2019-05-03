@@ -1,0 +1,18 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Display GDP Range</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>GDP</th>
+    </tr>
+    <tr th:each="gdp : ${gdpList}">
+        <td th:text="${gdp.name}"/>
+        <td th:text="${gdp.gdp}"/>
+    </tr>
+</table>
+</body>
+</html>
